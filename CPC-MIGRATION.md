@@ -2,7 +2,7 @@
 
 ## High Priority
 
-- [ x ] SNODAS
+- [x] SNODAS
 - [ ] RTMA Air Temperature
 - [ ] CBRFC Observed Precipitation
   - Downloaded from ???
