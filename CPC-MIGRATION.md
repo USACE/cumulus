@@ -26,6 +26,7 @@
 
 ## Investigate Later
 
+- [ ] Soil Moisture
 - [ ] Datasets outside of CONUS
   - [ ] alaska, guam, hawaii, puertori
   - [ ] Canadian Border Datasets
