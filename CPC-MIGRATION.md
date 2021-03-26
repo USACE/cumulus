@@ -15,7 +15,7 @@
   - [ ] SNODAS-Interpolated Unmasked (2010-Present)
   - [ ] SNODAS-Interpolated Unmasked Realtime (Airflow DAG)
 - [ ] CBRFC Observed Precipitation (SPL)
-  - [x] Download from web using Airflow
+  - [x] Airflow DAG to download from web
   - [x] Create Processing Script
   - [ ] Add to Database Products & Deploy
 - [ ] High Resolution Rapid Refresh (HRRR)
