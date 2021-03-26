@@ -15,7 +15,9 @@
   - [ ] SNODAS-Interpolated Unmasked (2010-Present)
   - [ ] SNODAS-Interpolated Unmasked Realtime (Airflow DAG)
 - [ ] CBRFC Observed Precipitation (SPL)
-  - Downloaded using wget
+  - [x] Download from web using Airflow
+  - [x] Create Processing Script
+  - [ ] Add to Database Products & Deploy
 - [ ] High Resolution Rapid Refresh (HRRR)
   - Available on NOAA Big Data Project: https://noaa-hrrr-pds.s3.amazonaws.com
 - [ ] NDFD Forecast Air Temperature (Days 1-3)
