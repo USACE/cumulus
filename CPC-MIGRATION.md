@@ -10,8 +10,8 @@
 - [x] PRISM Early Airtemp Daily Min (July 2020 - Present)
 - [x] PRISM Early Precip Daily Total (July 2020 - Present)
 - [ ] SNODAS-Interpolated
-  - [ ] 1. SNODAS Masked (2005-2010)
-  - [ ] 2. SNODAS-Interpolated Masked (2005-2010)
+  - [ ] 1. SNODAS Masked (2004-2010)
+  - [ ] 2. SNODAS-Interpolated Masked (2004-2010)
   - [ ] SNODAS-Interpolated Unmasked (2010-Present)
   - [ ] SNODAS-Interpolated Unmasked Realtime (Airflow DAG)
 - [ ] CBRFC Observed Precipitation (SPL)
