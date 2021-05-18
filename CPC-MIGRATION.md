@@ -28,7 +28,7 @@
 ## Medium Priority
 
 - [x] WPC 2.5KM Forecast Precipitation
-- [ ] Observed Precipitation
+- [x] Observed Precipitation
   - [x] LEIA98
   - [x] MRMS V12 QPE 01H Pass1
   - [x] MRMS V12 QPE 01H Pass2
@@ -37,7 +37,7 @@
   - Available on NOAA Big Data Project: https://noaa-ndfd-pds.s3.amazonaws.com/index.html
 - [ ] NDFD Forecast Precipitation (Days 4-7)
   - Available on NOAA Big Data Project: https://noaa-ndfd-pds.s3.amazonaws.com/index.html
-- [ ] RTMA Precipitation - leia98
+- [x] RTMA Precipitation - leia98
 
 ## Investigate Later
 
