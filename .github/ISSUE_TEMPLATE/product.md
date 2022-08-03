@@ -2,7 +2,7 @@
 name: Product
 about: Add or Modify a Data Product
 title: '[PRODUCT]:'
-labels: '',
+labels: ''
 assignees: ''
 ---
 
