@@ -1,8 +1,8 @@
 <!-- _coverpage.md -->
 
-# Cumulus
+# Cumulus Documentation
 
-> Meteorology, With Simple Data Access
+> System & Software Development Documentation for the Cumulus Platform
 
 <p>This documentation is under constant improvement. Join-in at the GitHub link below.</p>
 
