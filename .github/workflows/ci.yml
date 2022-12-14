@@ -1,0 +1,33 @@
+name: CI Build User Interface
+
+on:
+  push:
+    branches: [main]
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+jobs:
+  Develop:
+    if: github.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to Dev
+        env:
+          AWS_REGION: ${{ secrets.CASTLECI_DEVELOP_AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.CASTLECI_DEVELOP_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CASTLECI_DEVELOP_AWS_SECRET_ACCESS_KEY }}
+          CASTLECI_DEVELOP_S3_BUCKET_APPS: ${{ secrets.CASTLECI_DEVELOP_S3_BUCKET_APPS }}
+        run: aws s3 rm s3://$CASTLECI_DEVELOP_S3_BUCKET_APPS/cumulus-docs --recursive && aws s3 cp ./ s3://$CASTLECI_DEVELOP_S3_BUCKET_APPS/cumulus-docs --recursive
+  Stable:
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to Stable
+        env:
+          AWS_REGION: ${{ secrets.CASTLECI_STABLE_AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.CASTLECI_STABLE_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CASTLECI_STABLE_AWS_SECRET_ACCESS_KEY }}
+          CASTLECI_STABLE_S3_BUCKET_APPS: ${{ secrets.CASTLECI_STABLE_S3_BUCKET_APPS }}
+        run: aws s3 rm s3://$CASTLECI_STABLE_S3_BUCKET_APPS/cumulus-docs --recursive && aws s3 cp ./ s3://$CASTLECI_STABLE_S3_BUCKET_APPS/cumulus-docs --recursive

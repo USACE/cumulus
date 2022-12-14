@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cumulus Docs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cumulus-docs.corps.cloud/lib/themes/vue.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        coverpage: true,
+        name: 'Cumulus',
+        repo: 'https://github.com/USACE/cumulus',
+        loadSidebar: true,
+        maxLevel: 4,
+        subMaxLevel: 2,
+        auto2top: true,
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="https://cumulus-docs.corps.cloud/lib/docsify@4.js"></script>
+    <!-- Mermaid.js; todo: update to minified versions in /lib/ -->
+    <script src="https://cumulus-docs.corps.cloud/lib/mermaid.js"></script>
+    <script src="https://cumulus-docs.corps.cloud/lib/docsify-mermaid.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>
