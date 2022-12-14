@@ -2,7 +2,7 @@
 
 # Cumulus Documentation
 
-> System & Software Development Documentation for the Cumulus Platform
+> System & Software Development Information for the Cumulus Platform
 
 <p>This documentation is under constant improvement. Join-in at the GitHub link below.</p>
 
